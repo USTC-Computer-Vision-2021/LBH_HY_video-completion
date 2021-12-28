@@ -19,11 +19,11 @@
 一、配置siammask环境：
 - 1.创建conda环境
 ```shell
-export SiamMask=$PWD
-
+export SiamMask=$PWD/SiamMask
+export fgvc=$PWD/FGVC
 export PYTHONPATH=$PWD:$PYTHONPATH
 
-cd SiamMask
+cd $SiamMask
 conda create -n siammask python=3.6
 source activate siammask
 pip install -r requirements.txt
@@ -45,11 +45,31 @@ pip install imageio imageio-ffmpeg scikit-image imutils
 ```
 - 2.模型下载
 ```
-cd FVGC
+cd $fgvc
 chmod +x download_data_weights.sh
 ./download_data_weights.sh
 ```
 
 # 运行说明
+一、得到追踪的mask
+```
+cd $SiamMask/experiments/siammask_sharp
+export PYTHONPATH=$PWD:$PYTHONPATH
+conda activate siammask
+python ../../tools/demo.py --base_path [src] --resume SiamMask_DAVIS.pth --config config_davis.json
+```
+  得到的mask会保留在SiamMask/data/\[src\]_mask文件夹中
 
+二、目标擦除
+```
+cp -r $SiamMask/data $fgvc/data
+conda activaye FGVC
+cd $fgvc/tool
+python video_completion.py \
+       --mode object_removal \
+       --path ../data/[src] \
+       --path_mask ../data/[src_mask] \
+       --outroot ../result/[arc_removal] \
+       --seamless
+```
 # 示例
