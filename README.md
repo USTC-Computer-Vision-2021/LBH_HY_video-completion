@@ -6,9 +6,9 @@
 ##  项目说明
 擦除总共分为两个步骤：
 
-物体追踪和实例分割：Siammask
+物体追踪和实例分割：[Siammask](https://github.com/foolwood/SiamMask)
 
-视频修复：FGVC
+视频修复：[FGVC](https://github.com/lbh666/FGVC)
 
 由于小组能力受限，都是在上述现存项目稍加整合。
 
