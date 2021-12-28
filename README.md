@@ -1,1 +1,7 @@
-# USTC-Computer-Vision-2021-LBH_HY_video-completion
+# 项目：劣迹艺人删除
+廖柏皓 PB18061341
+ 黄越  PB18061366
+ 
+#项目构成
+物体追踪和实例分割：Siammask
+视频修复：FGVC
