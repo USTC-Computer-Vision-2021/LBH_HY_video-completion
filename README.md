@@ -17,13 +17,13 @@
 打开上面两个项目，分别按照原作者要求配置siammask和FGVC两个conda环境，并分别下载训练好的模型。
 
 1.配置siammask环境：
-'''
+```shell
 cd SiamMask
 conda create -n siammask python=3.6
 source activate siammask
 pip install -r requirements.txt
 bash make.sh
-'''
+```
 
 
 # 运行说明
