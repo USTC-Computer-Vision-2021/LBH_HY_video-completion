@@ -73,3 +73,5 @@ python video_completion.py \
        --seamless
 ```
 # 示例
+官方例子tennis
+![img](https://github.com/USTC-Computer-Vision-2021/LBH_HY_video-completion/blob/main/example/tennis_fusion.gif)
