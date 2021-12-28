@@ -16,15 +16,39 @@
 
 打开上面两个项目，分别按照原作者要求配置siammask和FGVC两个conda环境，并分别下载训练好的模型。
 
-1.配置siammask环境：
+一、配置siammask环境：
+- 1.创建conda环境
 ```shell
+export SiamMask=$PWD
+
+export PYTHONPATH=$PWD:$PYTHONPATH
+
 cd SiamMask
 conda create -n siammask python=3.6
 source activate siammask
 pip install -r requirements.txt
 bash make.sh
 ```
+- 2.模型下载
+```
+cd $SiamMask/experiments/siammask_sharp
+wget http://www.robots.ox.ac.uk/~qwang/SiamMask_DAVIS.pth
+```
 
+二、配置FGVC环境：
+- 1.创建conda环境：
+```
+conda create -n FGVC
+conda activate FGVC
+conda install pytorch=1.6.0 torchvision=0.7.0 cudatoolkit=10.1 matplotlib scipy opencv -c pytorch
+pip install imageio imageio-ffmpeg scikit-image imutils
+```
+- 2.模型下载
+```
+cd FVGC
+chmod +x download_data_weights.sh
+./download_data_weights.sh
+```
 
 # 运行说明
 
