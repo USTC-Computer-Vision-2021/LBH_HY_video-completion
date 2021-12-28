@@ -74,6 +74,9 @@ python video_completion.py \
 ```
 # 示例
 官方例子tennis
+
 ![img](https://github.com/USTC-Computer-Vision-2021/LBH_HY_video-completion/blob/main/example/tennis.gif)
+
 王力宏
+
 ![img](https://github.com/USTC-Computer-Vision-2021/LBH_HY_video-completion/blob/main/example/leehom.gif)
