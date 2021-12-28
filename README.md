@@ -74,4 +74,8 @@ python video_completion.py \
 ```
 # 示例
 官方例子tennis
-![img](https://github.com/USTC-Computer-Vision-2021/LBH_HY_video-completion/blob/main/example/tennis_fusion.gif)
+<center class="half">
+     <img src="https://github.com/USTC-Computer-Vision-2021/LBH_HY_video-completion/blob/main/example/tennis_fusion.gif" width="400"/><img src="https://github.com/USTC-Computer-Vision-2021/LBH_HY_video-completion/blob/main/example/tennis_rm.gif" width="400"/></center>
+王力宏
+<center class="half">
+    <img src="https://github.com/USTC-Computer-Vision-2021/LBH_HY_video-completion/blob/main/example/leehom_fusion.gif" width="400"/><img src="https://github.com/USTC-Computer-Vision-2021/LBH_HY_video-completion/blob/main/example/leehom_rm.gif" width="400"/> </center>
