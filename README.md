@@ -25,6 +25,8 @@
 
 ![img](https://github.com/USTC-Computer-Vision-2021/LBH_HY_video-completion/blob/main/example/fgvc_arch.png)
 
+通过边界信息补全光流，使用补全的光流，使用，近邻、非近邻、前向和反向的梯度信息，通过泊松重建得到补全的帧。
+
 ##  项目说明
 擦除总共分为两个步骤：
 
